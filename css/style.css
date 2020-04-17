@@ -1,0 +1,72 @@
+*, ::before, ::after {box-sizing: border-box;}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 100%;
+    background-image: url('https://image.elliott.computer/cloud-ship-8.jpg');
+    background-size: 180% auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, p, ul, ol, .note {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+main {
+    margin: 1rem;
+}
+
+/* Calendar */
+main .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1em;
+    max-width: 1000px;
+}
+@media(max-width: 535px) {
+    main .days {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+    main .days a {
+        height: auto !important;
+    }
+}
+main .days a {
+    height: 100px;
+    padding: 1em;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+main .days a[href] {
+    color: #284a70;
+    background: #fff;
+    border: 1px solid transparent;
+}
+main .days a[href]:hover {
+    background: yellow;
+}
+
+/* Page */
+ul {
+    margin-left: 1rem;
+}
+ol {
+    margin-left: 2.4rem;
+}
+img {
+    width: 500px;
+}
+.box {
+    border: 1px solid #000;
+
+}
+a {
+    color: yellow;
+}
